@@ -1,2 +1,2 @@
 # Fit-Chicks
-İlk mobil uygulama uygulamamız
+İlk mobil uygulamamız
