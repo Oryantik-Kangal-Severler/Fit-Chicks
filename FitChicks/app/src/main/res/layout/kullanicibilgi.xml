@@ -1,0 +1,165 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/kullanicibilgileri">
+
+
+    <TextView
+        android:id="@+id/isim"
+        android:layout_width="293dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/aramabutonn"
+        android:ems="10"
+        android:inputType="text"
+        android:text="ad"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.59"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="134dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="224dp"
+        android:text="Kullanıcı Adı"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/isim"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/boy"
+        android:layout_width="130dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="512dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/aramabutonn"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:text="boy"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.83"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Boy"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/boy"
+        app:layout_constraintEnd_toEndOf="@+id/boy"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/boy"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/kilo"
+        android:layout_width="130dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="512dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/aramabutonn"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="12dp"
+        android:text="kilo"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.199"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="150dp"
+        android:text="Kilo"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.034"
+        app:layout_constraintStart_toStartOf="@+id/kilo"
+        app:layout_constraintBottom_toTopOf="@+id/kilo"
+        app:layout_constraintEnd_toEndOf="@+id/kilo"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="463dp" />
+
+    <TextView
+        android:id="@+id/yas"
+        android:layout_width="293dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/aramabutonn"
+        android:ems="10"
+        android:inputType="text"
+        android:text="yas"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Yaş"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/isim" />
+
+    <TextView
+        android:id="@+id/mail"
+        android:layout_width="293dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="640dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/aramabutonn"
+        android:ems="10"
+        android:inputType="text"
+        android:text="mail"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="Mail"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/mail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/mail" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

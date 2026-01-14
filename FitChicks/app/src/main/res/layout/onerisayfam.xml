@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/oneribol"
+    >
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="253dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="casual"
+        android:text="Diyetisyeninden Beslenme Önerisi"
+        android:textColor="#FF9800"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.417"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="16dp"
+        android:text="🌞 Kahvaltı – 400 kcal\n
+•1 adet haşlanmış yumurta — 78 kcal\n
+•1 dilim tam buğday ekmeği — 70 kcal\n
+•1 dilim az yağlı beyaz peynir (30 g) — 60 kcal\n
+•5 adet zeytin — 40 kcal\n
+•1 avuç çiğ sebze (domates-salatalık-biber) — 20 kcal\n
+•1 tatlı kaşığı zeytinyağı (sebzelerin üzerine) — 45 kcal\n
+•1 fincan şekersiz çay — 0 kcal\n"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="142dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:text="🍛 Öğle Yemeği — 550 kcal\n
+• 1 porsiyon ızgara tavuk göğsü (120 g) — 200 kcal\n
+• 4-5 yemek kaşığı bulgur pilavı — 150 kcal\n
+• Büyük bir kase mevsim salata :\n
+   • Sebzeler — 30 kcal\n
+   • 1 tatlı kaşığı zeytinyağı — 45 kcal\n
+• 1 küçük kase yoğurt (150 g) — 125 kcal\n\n
+"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
+        android:text="🍽 Akşam Yemeği – 450 kcal\n
+•1 porsiyon zeytinyağlı sebze yemeği (kabak, patlıcan, taze fasulye vb.) — 200 kcal\n
+•1 dilim tam tahıl ekmeği — 70 kcal\n
+•1 kase yoğurt (150 g) — 125 kcal\n
+•1 porsiyon yeşil salata\n
+  •Sebzeler — 20 kcal\n
+  •1 tatlı kaşığı zeytinyağı — 45 kcal\n"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:text="Ara Öğün\n
+      🍏 1. Ara Öğün – 150 kcal\n
+•1 orta boy elma — 95 kcal\n
+•10 adet çiğ badem — 55 kcal\n
+      🍫 2. Ara Öğün – 120 kcal\n
+•1 küçük Türk kahvesi (şekersiz) — 0 kcal\n
+•1 adet küçük bitter çikolata (10 g) — 55 kcal\n
+•1 adet küçük muzun yarısı — 65 kcal\n
+"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

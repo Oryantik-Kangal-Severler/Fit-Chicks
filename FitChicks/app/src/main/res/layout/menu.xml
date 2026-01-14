@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/arkabeyaz"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/menuItem1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="?attr/selectableItemBackground"
+        android:drawableStart="@drawable/oneri"
+        android:drawablePadding="12dp"
+        android:gravity="center_vertical"
+        android:minWidth="200dp"
+        android:padding="12dp"
+        android:text="Öneriler"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="8dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/menuItem2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="?attr/selectableItemBackground"
+        android:drawablePadding="12dp"
+        android:gravity="center_vertical"
+        android:minWidth="200dp"
+        android:padding="12dp"
+        android:text="Kullanıcı Bilgileri"
+        android:drawableStart="@drawable/kullanici"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="8dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/menuItem3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="?attr/selectableItemBackground"
+        android:drawableStart="@drawable/cikis"
+        android:drawablePadding="12dp"
+        android:gravity="center_vertical"
+        android:minWidth="200dp"
+        android:padding="12dp"
+        android:text="Çıkış Yap"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+</LinearLayout>

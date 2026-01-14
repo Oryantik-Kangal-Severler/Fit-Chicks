@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kayitekraniilk"
+    tools:context=".view.KayitOlma2">
+
+
+    <Button
+        android:id="@+id/buttonn"
+        android:layout_width="283dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/cerceve"
+        android:text="KAYDOL"
+        android:textSize="20dp"
+        android:textColor="#9C27B0"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cinsiyetText" />
+
+    <EditText
+        android:id="@+id/boyText"
+        android:layout_width="252dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/white"
+        android:hint="Boy"
+        android:inputType="number"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.708"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yasText" />
+
+    <EditText
+        android:id="@+id/kiloText"
+        android:layout_width="252dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/white"
+        android:hint="Kilo"
+        android:inputType="number"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.708"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boyText" />
+
+    <ImageView
+        android:id="@+id/kiloicon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/kiloicon"
+        app:layout_constraintBottom_toBottomOf="@+id/kiloText"
+        app:layout_constraintEnd_toStartOf="@+id/kiloText"
+        app:layout_constraintTop_toTopOf="@+id/kiloText"
+        app:layout_constraintVertical_bias="0.375" />
+
+    <ImageView
+        android:id="@+id/yasicon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/yasicon"
+        app:layout_constraintBottom_toBottomOf="@+id/yasText"
+        app:layout_constraintEnd_toStartOf="@+id/yasText"
+        app:layout_constraintTop_toTopOf="@+id/yasText"
+        app:layout_constraintVertical_bias="0.375" />
+
+    <EditText
+        android:id="@+id/yasText"
+        android:layout_width="252dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="320dp"
+        android:background="@android:color/white"
+        android:hint="Yaş"
+        android:inputType="number"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.708"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/cinsiyetText"
+        android:layout_width="252dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/white"
+        android:hint="Cinsiyet"
+        android:inputType="text"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.708"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kiloText" />
+
+    <ImageView
+        android:id="@+id/cinsiyeticon1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/kadinicon"
+        app:layout_constraintBottom_toBottomOf="@+id/cinsiyeticon2"
+        app:layout_constraintEnd_toStartOf="@+id/cinsiyeticon2"
+        app:layout_constraintTop_toTopOf="@+id/cinsiyeticon2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/boyicon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/boyicon"
+        app:layout_constraintBottom_toBottomOf="@+id/boyText"
+        app:layout_constraintEnd_toStartOf="@+id/boyText"
+        app:layout_constraintTop_toTopOf="@+id/boyText"
+        app:layout_constraintVertical_bias="0.562" />
+
+    <ImageView
+        android:id="@+id/cinsiyeticon2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/erkekicon"
+        app:layout_constraintBottom_toBottomOf="@+id/cinsiyetText"
+        app:layout_constraintEnd_toStartOf="@+id/cinsiyetText"
+        app:layout_constraintTop_toTopOf="@+id/cinsiyetText"
+        app:layout_constraintVertical_bias="0.363" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

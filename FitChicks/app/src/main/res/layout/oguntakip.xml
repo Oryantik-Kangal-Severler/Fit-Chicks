@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:background="@color/white"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                >
+
+                <ImageButton
+                    android:id="@+id/gerigit"
+                    android:layout_width="48dp"
+                    android:layout_height="53dp"
+                    android:background="@drawable/okbir"
+                    android:layout_weight="0"
+                    android:layout_gravity="center"
+                    android:contentDescription="geri git"/>
+
+
+                <TextView
+                    android:id="@+id/dateTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="17 Kasım"
+                    android:textColor="#FF9800"
+                    android:textSize="24sp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_gravity="center"/>
+
+                <ImageButton
+                    android:id="@+id/ilerigit"
+                    android:layout_width="48dp"
+                    android:layout_height="53dp"
+                    android:background="@drawable/okiki"
+                    android:layout_weight="0"
+                    android:layout_gravity="center"
+                    android:contentDescription="ileri git"
+                     />
+
+            </LinearLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="155dp">
+
+
+                <ImageButton
+                    android:id="@+id/totalCalButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="145dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bar"
+                    android:contentDescription="kalori menüsünü aç"/>
+
+                <TextView
+                    android:layout_width="243dp"
+                    android:layout_height="50dp"
+                    android:text="Alınan Toplam Kalori"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:layout_marginStart="75sp"
+                    android:layout_marginTop="20dp"/>
+
+
+                <TextView
+                    android:id="@+id/totalCalorieTxt"
+                    android:layout_width="306dp"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="62dp"
+                    android:layout_marginTop="55dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="0/0 kCal"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/fazlaKaloriTxt"
+                    android:layout_width="300dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:text="Fazla Alınan Kalori:"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:layout_marginTop="39dp"
+                    android:visibility="invisible"/>
+
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="361dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <Button
+                android:id="@+id/homeBtn"
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/buttonyap"
+                app:backgroundTint="@null"
+                android:text="Ana Sayfa"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/addFoodBtn"
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/buttonyap"
+                app:backgroundTint="@null"
+                android:text="+ Yemek Ekle"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+
+        <!-- Kahvaltı Alanı -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="12dp">
+
+            <!-- Kahvaltı Butonu -->
+            <!-- Kahvaltı Kartı (Başlangıçta Gizli) -->
+            <Button
+                android:id="@+id/kahvalti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ogunbuton"
+                android:padding="16dp"
+                android:text="Kahvaltı"
+                android:textColor="#FF9800"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+
+            <LinearLayout
+                android:id="@+id/layoutBreakfastContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:visibility="gone">
+
+                <!-- Kahvaltı Kart Tasarımı -->
+                <LinearLayout
+                    android:id="@+id/cardBreakfast"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ogunbuton"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Başlık ve toplam kalori  -->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txtBreakfastTotal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0 kcal"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="#333333"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <!-- Yemeklerin ekleneceği yer -->
+                    <LinearLayout
+                        android:id="@+id/breakfastItems"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="8dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="12dp"
+            >
+
+            <Button
+                android:id="@+id/ogleYemegi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ogunbuton"
+                android:padding = "16dp"
+                android:text=" Öğle Yemeği"
+
+                android:textColor="#FF9800"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+
+            <LinearLayout
+                android:id="@+id/layoutLunchContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/cardLunch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ogunbuton"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txtLunchTotal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0 kcal"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="#333333"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+                        </TextView>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LunchItems"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="8dp">
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="12dp"
+            >
+
+            <Button
+                android:id="@+id/aksamYemegi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Akşam Yemeği"
+                android:textColor="#FF9800"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:background="@drawable/ogunbuton"
+                app:backgroundTint="@null"
+                android:padding="16dp" />
+
+            <LinearLayout
+                android:id="@+id/layoutDinnerContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/cardDinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ogunbuton"
+                    android:orientation="vertical"
+                    android:padding="16dp" >
+
+                  <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txtDinnerTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0 kcal"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#333333"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+                    </TextView>
+                  </androidx.constraintlayout.widget.ConstraintLayout>
+
+                     <LinearLayout
+                      android:id="@+id/dinnerItems"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:layout_marginTop="8dp">
+                     </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="12dp">
+
+
+            <Button
+                android:id="@+id/araOgun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Ara Öğün"
+                android:textColor="#FF9800"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:background="@drawable/ogunbuton"
+                app:backgroundTint="@null"
+                android:padding="16dp" />
+
+            <LinearLayout
+                android:id="@+id/layoutSnackContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:visibility="gone">
+
+
+                <LinearLayout
+                    android:id="@+id/cardSnack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:background="@drawable/ogunbuton">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txtSnackTotal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0 kcal"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="#333333"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+                        </TextView>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <LinearLayout
+                        android:id="@+id/snackItems"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="8dp">
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="2"
+            android:padding="20dp"
+            android:alignmentMode="alignMargins"
+            android:useDefaultMargins="true">
+
+            <!-- 1. Kutu -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/kare"
+                android:padding="10dp">
+
+                <ImageButton
+                    android:id="@+id/yuruyus"
+                    android:src="@drawable/walk_icon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Yürüyüş menüsünü aç"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yürüyüş"
+                    android:textColor="#FF9800"
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"/>
+
+
+
+            </LinearLayout>
+
+            <!-- 2. Kutu -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/kare"
+                android:padding="10dp">
+
+                <ImageButton
+                    android:id="@+id/kosmak"
+                    android:src="@drawable/run_icon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Koşu menüsünü aç"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Koşu"
+                    android:textColor="#FF9800"
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"/>
+
+
+
+            </LinearLayout>
+
+            <!-- 3. Kutu -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/kare"
+                android:padding="10dp">
+
+                <ImageButton
+                    android:id="@+id/bisikletsur"
+                    android:src="@drawable/bice_icon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Bisiklet sürme menüsünü aç"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bisiklet Sürme"
+                    android:textSize="15sp"
+                    android:textColor="#FF9800"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+            <!-- 4. Kutu -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/kare"
+                android:padding="10dp">
+
+
+                <ImageButton
+                    android:id="@+id/ipatlama"
+                    android:src="@drawable/rope_icon"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="İp atlama menüsünü aç"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="İp Atlama"
+                    android:textSize="15sp"
+                    android:textColor="#FF9800"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+        </GridLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme -->
+    <style name="Base.Theme.FCDemo" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- Status bar rengini şeffaf yap -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+
+        <!-- Status bar ikonlarını koyu yap (açık arka plan için) -->
+        <item name="android:windowLightStatusBar">true</item>
+
+    </style>
+
+    <style name="Theme.FCDemo" parent="Base.Theme.FCDemo" />
+
+</resources>
